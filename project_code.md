@@ -1,5 +1,6 @@
 # Project Source Code: Secure Cloud File Sharing System
 
+{% raw %}
 ## File: auto_run.bat
 `bat
 @echo off
@@ -4436,7 +4437,7 @@ export default function Dashboard() {
                             </div>
                             <div className="card glass-card">
                                 <h3>Security Status</h3>
-                                <h1 style={{ color: '#4ade80', fontSize: '24px' }}>PROTECTED</h1>
+                                <h1 style={ { color: '#4ade80', fontSize: '24px' } }>PROTECTED</h1>
                                 <p>End-to-End Encrypted</p>
                             </div>
                         </div>
@@ -4465,7 +4466,7 @@ export default function Dashboard() {
 
                             {uploadProgress > 0 && (
                                 <div className="progress">
-                                    <div className="progress-bar" style={{ width: `${uploadProgress}%` }}></div>
+                                    <div className="progress-bar" style={ { width: `${uploadProgress}%` } }></div>
                                 </div>
                             )}
 
@@ -5295,4 +5296,5 @@ timeout /t 3
 exit
 
 `
+{% endraw %}
 
