@@ -1,0 +1,245 @@
+.aws-header-m {
+    width: 100%;
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+/* TOP BAR */
+.aws-top-bar {
+    background-color: #232f3e;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.aws-top-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.aws-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    padding: 10px 0;
+}
+
+.aws-nav-item:hover {
+    text-decoration: underline;
+}
+
+.aws-dropdown-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.aws-dropdown-item {
+    padding: 12px 20px;
+    color: #16191f;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.aws-dropdown-item:hover {
+    background-color: #f2f3f3;
+    color: #e47911;
+    text-decoration: none;
+}
+
+.aws-nav-item-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+    background: transparent;
+    padding: 3px;
+    border-radius: 50%;
+    border: 1.5px solid #fff;
+}
+
+/* MIDDLE BAR */
+.aws-middle-bar {
+    background-color: #fff;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.aws-mid-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.aws-logo-m {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.aws-logo-text {
+    font-size: 26px;
+    font-weight: 800;
+    color: #232f3e;
+    letter-spacing: -1px;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.aws-mid-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.aws-mid-links span {
+    font-size: 15px;
+    font-weight: 700;
+    color: #16191f;
+    cursor: pointer;
+}
+
+.aws-mid-links span:hover {
+    color: #e47911;
+}
+
+.aws-mid-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.aws-search-m {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.search-text-m {
+    font-size: 15px;
+    font-weight: 700;
+    color: #16191f;
+}
+
+.aws-auth-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.aws-sign-in {
+    font-size: 15px;
+    font-weight: 700;
+    color: #16191f;
+    cursor: pointer;
+}
+
+.aws-sign-in:hover {
+    text-decoration: underline;
+}
+
+.aws-create-btn {
+    background-color: #16191f;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 22px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.aws-create-btn:hover {
+    background-color: #232f3e;
+}
+
+/* BOTTOM BAR */
+.aws-bottom-bar {
+    background: linear-gradient(90deg, #eedbfa 0%, #b8c9fd 100%);
+    padding: 25px 50px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.aws-bot-inner {
+    background: #fff;
+    width: 100%;
+    max-width: 1500px;
+    border-radius: 8px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    height: 65px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.aws-management-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #16191f;
+    margin-right: 60px;
+}
+
+.aws-bot-links {
+    display: flex;
+    gap: 35px;
+    height: 100%;
+}
+
+.aws-bot-links span {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #16191f;
+    cursor: pointer;
+    position: relative;
+    padding: 0 5px;
+}
+
+.aws-bot-links span:hover {
+    color: #e47911;
+}
+
+.active-bot-link {
+    font-weight: 700 !important;
+}
+
+.active-bot-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #16191f;
+}

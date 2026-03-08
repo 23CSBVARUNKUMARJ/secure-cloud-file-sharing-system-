@@ -1,0 +1,186 @@
+.google-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-dark-blue);
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.google-card {
+    background-color: #202124;
+    border-radius: 28px;
+    padding: 36px 40px;
+    width: 448px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.google-logo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+}
+
+.google-heading {
+    font-size: 24px;
+    font-weight: 400;
+    color: #e8eaed;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.google-account-pill {
+    display: flex;
+    align-items: center;
+    border: 1px solid #5f6368;
+    border-radius: 16px;
+    padding: 4px 8px 4px 6px;
+    cursor: pointer;
+    margin-bottom: 32px;
+    transition: background-color 0.2s;
+}
+
+.google-account-pill:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.pill-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #1a73e8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.pill-icon svg {
+    width: 12px;
+    height: 12px;
+    fill: #fff;
+}
+
+.pill-email {
+    font-size: 14px;
+    color: #e8eaed;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.pill-arrow {
+    fill: #9aa0a6;
+    width: 16px;
+    height: 16px;
+}
+
+.google-input-group {
+    width: 100%;
+    margin-bottom: 24px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.google-input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    padding: 15px 15px;
+    font-size: 16px;
+    color: #e8eaed;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.google-input:focus {
+    border-color: #8ab4f8;
+    box-shadow: 0 0 0 1px #8ab4f8;
+}
+
+.google-input::placeholder {
+    color: #9aa0a6;
+}
+
+.google-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.google-link {
+    color: #8ab4f8;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.google-link:hover {
+    text-decoration: underline;
+}
+
+.google-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.google-btn {
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.google-btn-cancel {
+    background: transparent;
+    color: #8ab4f8;
+}
+
+.google-btn-cancel:hover {
+    background-color: rgba(138, 180, 248, 0.08);
+}
+
+.google-btn-submit {
+    background-color: #8ab4f8;
+    color: #202124;
+}
+
+.google-btn-submit:hover {
+    background-color: #aecbfa;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+}
+
+.password-visibility-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.password-visibility-toggle svg {
+    fill: #9aa0a6;
+    width: 24px;
+    height: 24px;
+}
